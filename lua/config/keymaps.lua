@@ -46,3 +46,10 @@ end, opts)
 
 -- Comments
 vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap = false })
+
+-- Center the View
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
