@@ -40,12 +40,14 @@ keymap.set("n", "sv", ":vsplit<Return>", opts)
 -- keymap.set("n", "<C-w><down>", "<C-w>-")
 --
 --- Diagonstics
-keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
-end, opts)
-
+--[[ keymap.set("n", "<C-j>", function() ]]
+--[[ vim.diagnostic.goto_next() ]]
+-- [[ end, opts) ]]
+--
 -- Comments
-vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap = false })
+--[[ vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap = false }) ]]
+vim.api.nvim_set_keymap("n", "<C-_>", "gc", { noremap = false })
+--[[ vim.api.nvim_set_keymap("n", "<C-_>", "gbc", { noremap = false }) ]]
 
 -- Center the View
 keymap.set("n", "<C-d>", "<C-d>zz")

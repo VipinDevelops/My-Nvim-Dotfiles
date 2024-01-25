@@ -2,14 +2,16 @@ return {
   "tokyonight.nvim",
 
   opts = {
-    transparent = true,
+    --[[ transparent = true, ]]
 
-    style = "moon",
+    style = "night",
     styles = {
-      sidebars = "transparent",
-      floats = "transparent",
-      -- sidebars = "dark",
-      -- floats = "dark",
+      --[[ sidebars = "transparent", ]]
+      --[[ floats = "transparent", ]]
+      comments = { italic = true },
+      keywords = { italic = true },
+      sidebars = "dark",
+      floats = "dark",
     },
   },
 }
