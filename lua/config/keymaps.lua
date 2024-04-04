@@ -47,8 +47,8 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Comments
 --[[ vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap = false }) ]]
-vim.api.nvim_set_keymap("n", "<C-_>", "gc", { noremap = false })
---[[ vim.api.nvim_set_keymap("n", "<C-_>", "gbc", { noremap = false }) ]]
+-- vim.api.nvim_set_keymap("n", "<C-_>", "gc", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-.>", "gc", { noremap = false })
 
 -- Center the View
 keymap.set("n", "<C-d>", "<C-d>zz")
@@ -69,3 +69,7 @@ vim.keymap.set("n", "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp)
 vim.keymap.set("n", "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
 vim.keymap.set("n", "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
 vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
+
+--
+-- Grep and replace
+-- vim.api.nvim_set_keymap("v", "<C-f>", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", default_opts)
