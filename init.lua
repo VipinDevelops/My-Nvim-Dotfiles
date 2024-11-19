@@ -7,3 +7,6 @@ require("telescope").setup({
     },
   },
 })
+vim.diagnostic.config({
+  virtual_text = false, -- Disable standard virtual text diagnostics
+})

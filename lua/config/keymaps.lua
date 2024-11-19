@@ -19,16 +19,17 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 
 --- Jumplist
 -- -- keymap.set("n", "<C-m>", "<C-i>", opts)
---
 -- -- keymap.set("n", "te", ":tabedit<Return>", opts)
--- -- keymap.set("n", "<tab>", ":tabnext<Return>", opts)
--- -- keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+-- keymap.set("n", "<tab>", ":tabnext<Return>", opts)
+-- keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 --
 -- Split window
-keymap.set("n", "ss", ":split<Return>", opts)
-keymap.set("n", "sv", ":vsplit<Return>", opts)
+-- keymap.set("n", "ss", ":split<Return>", opts)
+-- keymap.set("n", "sv", ":vsplit<Return>", opts)
+-- keymap.set("n", "<Space>ss", ":split<Return>", { desc = "split vertical" })
+-- keymap.set("n", "<Space>sv", ":vsplit<Return>", { desc = "split horizontal" })
 
---- Move window
+--- Move window - I can use default for now because tmux
 -- keymap.set("n", "sh", "<C-w>h")
 -- keymap.set("n", "sk", "<C-w>k")
 -- keymap.set("n", "sj", "<C-w>j")
@@ -61,6 +62,10 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
+
+-- move between paragraph
+keymap.set("n", "{", "{zz")
+keymap.set("n", "}", "}zz")
 
 -- Experiment
 -- keymap.set("n", "j", "jzzzv")
