@@ -5,6 +5,7 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 local nvim_tmux_nav = require("nvim-tmux-navigation")
+local Util = require("lazyvim.util")
 
 --- Increment/decrement
 ---
@@ -16,6 +17,7 @@ local nvim_tmux_nav = require("nvim-tmux-navigation")
 
 --- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
+-- keymap.set("n", "<leader>a", "gg<S-v>G")
 
 --- Jumplist
 -- -- keymap.set("n", "<C-m>", "<C-i>", opts)
@@ -66,7 +68,6 @@ keymap.set("n", "N", "Nzzzv")
 -- move between paragraph
 keymap.set("n", "{", "{zz")
 keymap.set("n", "}", "}zz")
-
 -- Experiment
 -- keymap.set("n", "j", "jzzzv")
 -- keymap.set("n", "h", "hzzzv")
@@ -84,4 +85,18 @@ vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
 -- Grep and replace
 -- vim.api.nvim_set_keymap("v", "<C-f>", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", default_opts)
 --
---
+-- Save file
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { noremap = true, desc = "Save window" })
+
+-- re-do
+-- vim.keymap.set("n", "<leader>r", "<C-r>", { noremap = true, desc = "re-do" })
+
+-- Borderless terminal
+vim.keymap.set("n", "<C-/>", function()
+  Util.terminal(nil, { border = "none" })
+end, { desc = "Term with border" })
+
+-- Borderless lazygit
+vim.keymap.set("n", "<leader>gg", function()
+  Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false, border = "none" })
+end, { desc = "Lazygit (root dir)" })
