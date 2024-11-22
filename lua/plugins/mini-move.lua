@@ -8,8 +8,8 @@ return {
       down = "J",
       up = "K",
 
-      line_left = "",
       line_right = "",
+      line_left = "",
       line_down = "",
       line_up = "",
     },

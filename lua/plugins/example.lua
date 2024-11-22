@@ -177,13 +177,12 @@ return {
   },
 
   -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
+  -- { import = "lazyvim.plugins.extras.ui.mini-starter" },
+  -- -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
+  -- { import = "lazyvim.plugins.extras.lang.json" },
 
-  -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
-  { import = "lazyvim.plugins.extras.lang.json" },
-
-  -- add any tools you want to have installed below
   {
+    -- add any tools you want to have installed below
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
@@ -196,7 +195,7 @@ return {
   },
 }
 
--- ///////////////////// My Own Here
+-- ///////////////////// My Own HereiHERE
 -- return {
 --   "Bekaboo/dropbar.nvim",
 --   -- optional, but required for fuzzy finder support

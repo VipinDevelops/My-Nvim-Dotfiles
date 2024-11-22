@@ -1,21 +1,3 @@
--- return {
---   {
---     "folke/tokyonight.nvim",
---     lazy = true,
---     opts = {
---       style = "night",
---     },
---   },
---
---   -- Configure LazyVim to load gruvbox
---   {
---     "LazyVim/LazyVim",
---     opts = {
---       colorscheme = "tokyonight",
---     },
---   },
-
--- Or with configuration
 return {
   "projekt0n/github-nvim-theme",
   name = "github-theme",
@@ -25,6 +7,15 @@ return {
   config = function()
     require("github-theme").setup({
       -- options = { transparent = true },
+      options = {
+        -- transparent = true,
+        dim_inactive = true,
+        styles = {
+          comments = "italic",
+          -- keywords = "bold",
+          -- types = "italic,bold",
+        },
+      },
 
       -- options = {},
     })

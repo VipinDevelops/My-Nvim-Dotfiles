@@ -7,7 +7,7 @@ return {
     "nvim-lualine/lualine.nvim",
     enabled = false,
   },
-  -- filename
+  -- filename on the top right corner
   {
     "b0o/incline.nvim",
     dependencies = {},
