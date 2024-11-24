@@ -10,13 +10,21 @@ return {
       options = {
         -- transparent = true,
         dim_inactive = true,
+        -- terminal_colors = true,
+
+        modules = {
+          -- neotree = { enable = true },
+        },
+
+        --  disable default theme of modules
+        module_default = false,
+
         styles = {
           comments = "italic",
           -- keywords = "bold",
           -- types = "italic,bold",
         },
       },
-
       -- options = {},
     })
 
