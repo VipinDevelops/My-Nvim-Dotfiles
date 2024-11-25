@@ -2,9 +2,11 @@ return {
   {
     "nvimdev/dashboard-nvim",
     enabled = false,
+    -- enabled = true,
   },
   {
     "nvim-lualine/lualine.nvim",
+    -- enabled = true,
     enabled = false,
   },
   -- filename on the top right corner

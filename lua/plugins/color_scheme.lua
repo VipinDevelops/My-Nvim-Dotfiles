@@ -13,11 +13,11 @@ return {
         -- terminal_colors = true,
 
         modules = {
-          -- neotree = { enable = true },
+          neotree = { enable = true },
         },
 
         --  disable default theme of modules
-        module_default = false,
+        -- module_default = false,
 
         styles = {
           comments = "italic",
