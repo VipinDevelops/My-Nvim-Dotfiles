@@ -87,6 +87,8 @@ vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
 --
 -- Save file
 vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { noremap = true, desc = "Save window" })
+-- close file
+vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { noremap = true, desc = "Quit window" })
 
 -- re-do
 -- vim.keymap.set("n", "<leader>r", "<C-r>", { noremap = true, desc = "re-do" })
