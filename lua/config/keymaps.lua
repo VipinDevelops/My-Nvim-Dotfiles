@@ -59,15 +59,15 @@ keymap.set("n", "<S-Left>", "<cmd>vertical resize +2<cr>", { desc = "Increase Wi
 vim.api.nvim_set_keymap("n", "<C-.>", "gc", { noremap = false })
 
 -- Center the View
-keymap.set("n", "<C-d>", "<C-d>zz")
-keymap.set("n", "<C-u>", "<C-u>zz")
-
-keymap.set("n", "n", "nzzzv")
-keymap.set("n", "N", "Nzzzv")
-
--- move between paragraph
-keymap.set("n", "{", "{zz")
-keymap.set("n", "}", "}zz")
+-- keymap.set("n", "<C-d>", "<C-d>zz")
+-- keymap.set("n", "<C-u>", "<C-u>zz")
+--
+-- keymap.set("n", "n", "nzzzv")
+-- keymap.set("n", "N", "Nzzzv")
+--
+-- -- move between paragraph
+-- keymap.set("n", "{", "{zz")
+-- keymap.set("n", "}", "}zz")
 -- Experiment
 -- keymap.set("n", "j", "jzzzv")
 -- keymap.set("n", "h", "hzzzv")
