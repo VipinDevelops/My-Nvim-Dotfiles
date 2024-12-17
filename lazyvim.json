@@ -2,7 +2,8 @@
   "extras": [
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.coding.nvim-cmp"
+    "lazyvim.plugins.extras.coding.nvim-cmp",
+    "lazyvim.plugins.extras.ui.indent-blankline"
   ],
   "news": {
     "NEWS.md": "10960"
