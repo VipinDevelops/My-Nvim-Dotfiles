@@ -30,12 +30,6 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 -- keymap.set("n", "sv", ":vsplit<Return>", opts)
 -- keymap.set("n", "<Space>ss", ":split<Return>", { desc = "split vertical" })
 -- keymap.set("n", "<Space>sv", ":vsplit<Return>", { desc = "split horizontal" })
-
---- Move window - I can use default for now because tmux
--- keymap.set("n", "sh", "<C-w>h")
--- keymap.set("n", "sk", "<C-w>k")
--- keymap.set("n", "sj", "<C-w>j")
--- keymap.set("n", "sl", "<C-w>l")
 --
 --- Resize window
 -- keymap.set("n", "<C-w><left>", "<C-w><")
@@ -61,11 +55,11 @@ vim.api.nvim_set_keymap("n", "<C-.>", "gc", { noremap = false })
 -- Center the View
 -- keymap.set("n", "<C-d>", "<C-d>zz")
 -- keymap.set("n", "<C-u>", "<C-u>zz")
---
--- keymap.set("n", "n", "nzzzv")
--- keymap.set("n", "N", "Nzzzv")
---
--- -- move between paragraph
+
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+
+-- move between paragraph
 -- keymap.set("n", "{", "{zz")
 -- keymap.set("n", "}", "}zz")
 -- Experiment

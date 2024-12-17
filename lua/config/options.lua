@@ -25,6 +25,7 @@ vim.opt.showcmd = true
 
 --  disbale command and status line
 vim.opt.cmdheight = 0
+-- status line
 vim.opt.laststatus = 0
 
 -- tab as space
@@ -32,7 +33,7 @@ vim.opt.expandtab = true
 vim.opt.smarttab = true
 
 -- at leaset 10 line above and below
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 15
 
 -- command preview before execute
 vim.opt.inccommand = "split"
@@ -64,7 +65,9 @@ vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 -- vim.opt.mouse = ""
 --
-vim.g.lazyvim_picker = "telescope"
-
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
+
+-- after verison 14
+vim.g.lazyvim_picker = "telescope"
+vim.g.snacks_animate = false
