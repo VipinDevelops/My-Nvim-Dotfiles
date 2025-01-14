@@ -1,4 +1,4 @@
----- Keymaps are automatically loaded on the VeryLazy event
+--
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
@@ -80,9 +80,9 @@ vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
 -- vim.api.nvim_set_keymap("v", "<C-f>", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", default_opts)
 --
 -- Save file
-vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { noremap = true, desc = "Save window" })
+-- vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { noremap = true, desc = "Save window" })
 -- close file
-vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { noremap = true, desc = "Quit window" })
+-- vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { noremap = true, desc = "Quit window" })
 
 -- re-do
 -- vim.keymap.set("n", "<leader>r", "<C-r>", { noremap = true, desc = "re-do" })
