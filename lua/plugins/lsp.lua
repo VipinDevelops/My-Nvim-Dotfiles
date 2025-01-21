@@ -8,10 +8,10 @@ return {
             Lua = {
               format = {
                 enable = true,
-                defaultConfig = {
-                  indent_style = "space",
-                  indent_size = "4",
-                },
+                -- defaultConfig = {
+                --   indent_style = "space",
+                --   indent_size = "4",
+                -- },
               },
             },
           },

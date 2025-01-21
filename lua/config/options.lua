@@ -26,7 +26,7 @@ vim.opt.showcmd = true
 --  disbale command and status line
 vim.opt.cmdheight = 0
 -- status line
-vim.opt.laststatus = 0
+vim.opt.laststatus = 1
 
 -- tab as space
 vim.opt.expandtab = true
@@ -71,3 +71,6 @@ vim.opt.formatoptions:append({ "r" })
 -- after verison 14
 vim.g.lazyvim_picker = "telescope"
 vim.g.snacks_animate = false
+
+-- python config
+vim.g.lazyvim_python_lsp = "pyright"
