@@ -8,7 +8,7 @@ return {
     require("github-theme").setup({
       -- options = { transparent = true },
       options = {
-        -- transparent = true,
+        transparent = true,
         -- dim_inactive = true,
         -- terminal_colors = true,
 
@@ -17,7 +17,7 @@ return {
         },
 
         --  disable default theme of modules
-        -- module_default = false,
+        module_default = true,
 
         styles = {
           comments = "italic",

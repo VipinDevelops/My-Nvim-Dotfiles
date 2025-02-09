@@ -1,8 +1,9 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.lang.json",
-    "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.ui.indent-blankline"
+    "lazyvim.plugins.extras.ui.indent-blankline",
+    "lazyvim.plugins.extras.util.dot"
   ],
   "news": {
     "NEWS.md": "10960"

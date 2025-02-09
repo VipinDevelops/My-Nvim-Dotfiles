@@ -72,5 +72,11 @@ vim.opt.formatoptions:append({ "r" })
 vim.g.lazyvim_picker = "telescope"
 vim.g.snacks_animate = false
 
--- python config
+-- pythmn config
 vim.g.lazyvim_python_lsp = "pyright"
+
+-- eslint
+vim.g.lazyvim_eslint_auto_format = false
+vim.g.lazyvim_prettier_auto_format = true
+vim.g.lazyvim_prettier_needs_config = true
+vim.g.autoformat = true
