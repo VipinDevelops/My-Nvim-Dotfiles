@@ -76,7 +76,7 @@ vim.g.snacks_animate = false
 vim.g.lazyvim_python_lsp = "pyright"
 
 -- eslint
-vim.g.lazyvim_eslint_auto_format = false
+vim.g.lazyvim_eslint_auto_format = true
 vim.g.lazyvim_prettier_auto_format = true
-vim.g.lazyvim_prettier_needs_config = true
+vim.g.lazyvim_prettier_needs_config = false
 vim.g.autoformat = true
