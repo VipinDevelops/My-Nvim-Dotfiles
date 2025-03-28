@@ -69,7 +69,7 @@ vim.opt.splitkeep = "cursor"
 vim.opt.formatoptions:append({ "r" })
 
 -- after verison 14
-vim.g.lazyvim_picker = "telescope"
+-- vim.g.lazyvim_picker = "telescope"
 vim.g.snacks_animate = false
 
 -- pythmn config
