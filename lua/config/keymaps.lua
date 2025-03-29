@@ -5,6 +5,7 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 local nvim_tmux_nav = require("nvim-tmux-navigation")
+local fzf = require("fzf-lua")
 local Util = require("lazyvim.util")
 
 --- Increment/decrement
@@ -96,3 +97,17 @@ end, { desc = "Term with border" })
 vim.keymap.set("n", "<leader>gg", function()
   Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false, border = "none" })
 end, { desc = "Lazygit (root dir)" })
+
+local live_grep_cwd = function()
+  fzf.fzf_exec("fd --type d -H --exclude=.git", {
+    actions = {
+      ["default"] = function(sel, opts)
+        fzf.live_grep({ cwd = sel[1], fzf_opts = { ["--layout"] = "reverse-list" } })
+      end,
+    },
+  })
+end
+
+vim.keymap.set("n", "<leader>sf", live_grep_cwd, { desc = "Search in a Folder" })
+vim.keymap.set("n", "gD", "<cmd>vsplit | TSToolsGoToSourceDefinition<CR>")
+vim.keymap.set("n", "gd", "<cmd>TSToolsGoToSourceDefinition<CR>")
